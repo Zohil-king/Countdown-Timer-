@@ -1,0 +1,150 @@
+/* Reset and base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #184f7f, #2ea5ab);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 500px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #e38418;
+}
+
+.input-section {
+  margin-bottom: 25px;
+}
+
+.input-section label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+#datetime {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+#startBtn {
+  padding: 8px 16px;
+  margin-left: 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#startBtn:hover {
+  background-color: #0056b3;
+}
+
+.countdown {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.countdown div {
+  text-align: center;
+}
+
+.countdown span {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.countdown p {
+  margin-top: 5px;
+  font-size: 1rem;
+  color: #555;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+body.dark {
+  background: #111;
+  color: #f0f0f0;
+}
+
+body.dark .container {
+  background: #222;
+  color: #f0f0f0;
+  box-shadow: 0 5px 25px rgba(255, 255, 255, 0.1);
+}
+
+body.dark .countdown span {
+  color: #f0f0f0;
+}
+
+body.dark #startBtn,
+body.dark #resetBtn {
+  background-color: #444;
+  color: white;
+}
+
+body.dark #startBtn:hover,
+body.dark #resetBtn:hover {
+  background-color: #666;
+}
+
+#resetBtn {
+  padding: 8px 16px;
+  margin-left: 10px;
+  border: none;
+  background-color: crimson;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#resetBtn:hover {
+  background-color: darkred;
+}
+
+.footer {
+  text-align: center;
+  padding: 12px 0;
+  font-size: 0.95rem;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  backdrop-filter: blur(4px);
+}
+
+body.dark .footer {
+  background: rgba(255, 255, 255, 0.1);
+  color: #eee;
+}

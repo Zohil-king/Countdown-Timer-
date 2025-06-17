@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Countdown Timer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="theme-toggle">
+    <label>
+        <input type="checkbox" id="themeSwitcher" />
+        Toggle Dark Mode
+    </label>
+  </div>
+
+  <div class="container">
+    <h1>Countdown Timer ⏳</h1>
+    
+    <div class="input-section">
+      <label for="datetime">Choose Date & Time:</label>
+      <input type="datetime-local" id="datetime" />
+      <button id="startBtn">Start Countdown</button>
+      <button id="resetBtn">Reset</button>
+    </div>
+
+    <div class="countdown">
+      <div><span id="days">00</span><p>Days</p></div>
+      <div><span id="hours">00</span><p>Hours</p></div>
+      <div><span id="minutes">00</span><p>Minutes</p></div>
+      <div><span id="seconds">00</span><p>Seconds</p></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <footer class="footer">
+  By Zohil Rahimzai 2025
+  </footer>
+
+</body>
+</html>
